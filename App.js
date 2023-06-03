@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
 	const height = document.querySelector("#input-row-1 input:nth-child(1)").value;
 	const weight = document.querySelector("#input-row-1 input:nth-child(2)").value;
 	const age = document.querySelector("#input-row-1 input:nth-child(3)").value;
-	const gender = document.querySelector("#input-row-2 input").value;
+	const gender = document.querySelector("#gender").value;
 	const activityLevel = document.querySelector("#input-row-2 select").value;
 
 	// Make API request to generate meals

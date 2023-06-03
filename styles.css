@@ -47,6 +47,7 @@ navbar > p {
 #submitBtn {
 	display: flex;
 	justify-content: space-evenly;
+	gap: 30px;
 	width: 100%;
 	flex-wrap: wrap;
 }
@@ -99,6 +100,11 @@ select:focus {
 	padding: 10px;
 	font-family: Arial, sans-serif;
 	flex-wrap: wrap;
+}
+
+span {
+	font-size: xx-large;
+	color: #ee0800;
 }
 
 .meal-card {

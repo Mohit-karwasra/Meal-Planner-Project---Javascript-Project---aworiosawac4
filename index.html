@@ -20,7 +20,13 @@
 					<input type="text" placeholder="Enter Age" id="age" />
 				</div>
 				<div id="input-row-2">
-					<input type="text" placeholder="Gender" id="gender" />
+					<div>
+						<select id="gender">
+							<option value="" disabled selected hidden>Select Gender</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+						</select>
+					</div>
 					<select id="activity-level">
 						<option value="" disabled selected hidden>Activity Level</option>
 						<option value="Very high">High</option>
@@ -35,7 +41,7 @@
 		</section>
 		<section id="section-2">
 			<div>
-				Breakfast
+				<span>Breakfast</span>
 				<div class="meal-card">
 					<img src="" />
 					<h3>Meal 1</h3>
@@ -44,7 +50,7 @@
 				</div>
 			</div>
 			<div>
-				Lunch
+				<span>Lunch</span>
 				<div class="meal-card">
 					<img src="" />
 					<h3>Meal 2</h3>
@@ -53,7 +59,7 @@
 				</div>
 			</div>
 			<div>
-				Dinner
+				<span>Dinner</span>
 				<div class="meal-card">
 					<img src="" />
 
