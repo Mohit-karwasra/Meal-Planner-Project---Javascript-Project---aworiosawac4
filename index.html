@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<navbar>
+			<img id="logo" src="./assets/logo_color.svg" />
+			<p>Meal Planner</p>
+		</navbar>
+		<section id="section-1">
+			<form id="userForm">
+				<div id="input-row-1">
+					<input type="text" placeholder="Enter height" id="height" />
+					<input type="text" placeholder="Enter weight" id="weight" />
+					<input type="text" placeholder="Enter Age" id="age" />
+				</div>
+				<div id="input-row-2">
+					<input type="text" placeholder="Gender" id="gender" />
+					<select id="activity-level">
+						<option value="" disabled selected hidden>Activity Level</option>
+						<option value="Very high">High</option>
+						<option value="Very high">Moderate</option>
+						<option value="Very high">Low</option>
+					</select>
+				</div>
+				<div id="submitBtn">
+					<input type="submit" value="Generate Meals" class="button" />
+				</div>
+			</form>
+		</section>
+		<section id="section-2">
+			<div>
+				Breakfast
+				<div class="meal-card">
+					<img src="" />
+					<h3>Meal 1</h3>
+					<p>Calories</p>
+					<button class="getRecipe">Get Recipe</button>
+				</div>
+			</div>
+			<div>
+				Lunch
+				<div class="meal-card">
+					<img src="" />
+					<h3>Meal 2</h3>
+					<p>Calories</p>
+					<button class="getRecipe">Get Recipe</button>
+				</div>
+			</div>
+			<div>
+				Dinner
+				<div class="meal-card">
+					<img src="" />
 
+					<h3>Meal 3</h3>
+					<p>Calories</p>
+					<button class="getRecipe">Get Recipe</button>
+				</div>
+			</div>
+		</section>
+		<section id="section-3"></section>
+	</body>
+	<script src="App.js"></script>
+</html>
