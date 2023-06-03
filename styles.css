@@ -109,17 +109,18 @@ span {
 
 .meal-card {
 	max-width: 400px;
-	border: 2px solid #ff4742;
+	/* border: 2px solid #ff4742; */
 	border-radius: 20px;
-	background-color: #fff;
-	color: #333;
-	padding: 10px;
+	background-color: #ff4742;
+	color: #fff;
+	padding-bottom: 10px;
 	text-align: center;
 }
 
 .meal-card img {
 	max-width: 100%;
 	height: auto;
+	object-fit: cover;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
@@ -143,9 +144,17 @@ span {
 	background-color: #ff4742;
 	color: #fff;
 	padding: 8px 16px;
+	margin: 10px;
 	border-radius: 6px;
 	font-size: 14px;
 	font-weight: 600;
+	border: 1px solid white;
+	border-radius: 20px;
+}
+
+.meal-card button:hover {
+	background: white;
+	color: #ff4742;
 }
 
 .recipe-details {
@@ -171,7 +180,6 @@ span {
 	display: flex;
 	margin: 30px;
 	background-color: #f0f0f0;
-	/* height: 25vh; */
 	justify-content: space-around;
 	align-items: center;
 	color: #ff4742;
