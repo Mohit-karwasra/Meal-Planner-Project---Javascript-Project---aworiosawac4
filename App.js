@@ -45,6 +45,7 @@ function updateMealCard(card, meal, calories) {
 	)
 		.then((response) => response.json())
 		.then((data) => {
+			// Append image inside meal card of the dish
 			card.querySelector("img").src = data.image;
 			recipeButton.addEventListener("click", () => {
 				section3.textContent = "";
