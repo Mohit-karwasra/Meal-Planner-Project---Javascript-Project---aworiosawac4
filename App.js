@@ -103,6 +103,7 @@ function updateMealCard(card, meal, calories) {
 				});
 
 				const recipeDetails = document.createElement("div");
+				recipeDetails.appendChild(document.createElement("h1")).textContent = meal.title;
 				recipeDetails.appendChild(document.createElement("h2")).textContent = "Ingredients";
 				recipeDetails.appendChild(ingredientsList);
 				recipeDetails.appendChild(document.createElement("h2")).textContent = "Steps";
