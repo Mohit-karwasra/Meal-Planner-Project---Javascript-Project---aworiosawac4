@@ -72,6 +72,7 @@ function updateMealCard(card, meal, calories) {
 			// Append image inside meal card of the dish
 			card.querySelector("img").src = data.image;
 			recipeButton.addEventListener("click", () => {
+				section3.style.visibility = "visible";
 				section3.textContent = "";
 				const ingredients = data.extendedIngredients.map((ingredient) => ingredient.original);
 				const steps = data.analyzedInstructions[0].steps.map((step) => step.step);
@@ -111,10 +112,16 @@ function updateMealCard(card, meal, calories) {
 				recipeDetails.appendChild(document.createElement("h2")).textContent = "Utensils";
 				recipeDetails.appendChild(utensilsList);
 
+				const hideShowBtn = document.createElement("button");
+				hideShowBtn.className = "hide-recipe";
+				hideShowBtn.textContent = "Hide Recipe";
+				recipeDetails.appendChild(hideShowBtn);
+
 				section3.appendChild(recipeDetails);
 
-				// Disable recipe button after showing the details
-				// recipeButton.disabled = true;
+				hideShowBtn.addEventListener("click", () => {
+					section3.style.visibility = "hidden";
+				});
 			});
 		})
 		.catch((error) => console.log(error));
